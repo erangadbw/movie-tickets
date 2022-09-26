@@ -39,21 +39,21 @@ public class TickCostServiceIntTest {
     }
 
     private Ticket expectedAdultTicket(){
-        Ticket ticket = new Ticket(TicketType.Adult,1,ticketCostService.ADULT_COST);
+        Ticket ticket = new Ticket(TicketType.Adult,1,ticketCostService.ADULT_COST.setScale(2));
         return ticket;
     }
 
     private Ticket expectedChildrenTicket(){
-        Ticket ticket = new Ticket(TicketType.Children,1,ticketCostService.CHILDREN_COST);
+        Ticket ticket = new Ticket(TicketType.Children,1,ticketCostService.CHILDREN_COST.setScale(2));
         return ticket;
 
     }
     private Ticket expectedTeenTicket(){
-        Ticket ticket = new Ticket(TicketType.Teen,1,ticketCostService.TEEN_COST);
+        Ticket ticket = new Ticket(TicketType.Teen,1,ticketCostService.TEEN_COST.setScale(2));
         return ticket;
     }
     private Ticket expectedSeniorTicket(){
-        Ticket ticket = new Ticket(TicketType.Senior,1,ticketCostService.SENIOR_COST);
+        Ticket ticket = new Ticket(TicketType.Senior,1,ticketCostService.SENIOR_COST.setScale(2));
         return ticket;
 
     }
